@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Faith Academy</title>
+    <link rel="stylesheet" href="/CSS/fa.css">
+</head>
+<body>
+
+ <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Faith Academy</h1>
+            <nav>
+                <a href="Fa.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="academics.html">Academics</a>
+                <a href="admissions.html">Admissions</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="facilities.html">Facilities</a>
+                <a href="contact.html" class="active">Contact</a>
+
+
+            </nav>
+        </div>
+    </header>
+<section class="page-banner">
+    <h2>Contact Us</h2>
+    <p>We would love to hear from you</p>
+</section>
+
+<section class="section">
+    <div class="container contact-grid">
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <h3>School Address</h3>
+            <p>
+                KM 10 Owerri–Onitsha Road,<br>
+                Ogbaku, Imo State,<br>
+                Nigeria
+            </p>
+
+            <h3>Phone</h3>
+            <p>+234 XXX XXX XXXX</p>
+
+            <h3>Email</h3>
+            <p>fa.owerri@ifcww.org</p>
+
+            <h3>Office Hours</h3>
+            <p>
+                Monday – Friday<br>
+                8:00 AM – 4:00 PM
+            </p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h3>Send Us a Message</h3>
+
+          <form action="https://wa.me/2348168314198" target="_blank">
+    <input type="text" id="name" placeholder="Full Name" required>
+    <input type="email" id="email" placeholder="Email Address" required>
+    <textarea id="message" placeholder="Your Message" required></textarea>
+
+    <button type="submit">Send via WhatsApp</button>
+</form>
+
+        </div>
+
+    </div>
+</section>
+ 
+<!-- WhatsApp Chat Button -->
+<a href="https://wa.me/2347036690520" class="whatsapp-btn" target="_blank" title="Chat with us on WhatsApp">
+    <span class="wa-icon">🟢</span>
+    <span class="wa-text">WhatsApp</span>
+</a>
+
+       <footer class="site-footer">
+    <div class="container footer-grid">
+
+
+
+
+        <script>
+document.querySelector("form").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let message = document.getElementById("message").value;
+
+    let text = `Hello Faith Academy,%0A
+Name: ${name}%0A
+Email: ${email}%0A
+Message: ${message}`;
+
+    let phone = "2348168314198"; // change number here
+
+    window.open(`https://wa.me/${phone}?text=${text}`, "_blank");
+});
+</script>
+
+
+        <div class="footer-box">
+            <h3>Faith Academy</h3>
+            <p>
+                Faith Academy is a secondary school committed to academic excellence,
+                spirituality, and creativity. We provide a nurturing environment that
+                prepares students for a successful future.
+            </p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="Fa.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>Contact Us</h3>
+            <p>
+                📍 KlM 10 Owerri–Onitsha Road,<br>
+                Ogbaku, Imo State
+            </p>
+            <p>📞 +234 000 000 0000</p>
+            <p>✉️ </p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 Faith Academy. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

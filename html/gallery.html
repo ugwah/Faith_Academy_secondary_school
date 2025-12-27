@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery / Faith Academy</title>
+    <link rel="stylesheet" href="/CSS/fa.css">
+</head>
+<body>
+             <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Faith Academy</h1>
+            <nav>
+                <a href="Fa.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="academics.html">Academics</a>       
+                <a href="admissions.html">Admissions</a>
+                 <a href="gallery.html" class="active">Gallery</a>  
+                 <a href="facilities.html">Facilities</a>  
+                <a href="contact.html">Contact</a>
+
+
+
+            </nav>
+        </div>
+    </header>
+    <section class="page-banner">
+    <h2>School Gallery</h2>
+    <p>Life at Faith Academy</p>
+</section>
+
+<section class="section">
+    <div class="container gallery-grid animate">
+
+        <div class="gallery-item">
+            <img src="/IMG/education.jpeg" alt="Classroom" onclick="openLightbox(this.src)">
+        </div>
+
+        <div class="gallery-item">
+            <img src="/IMG/fa-jos1.jpeg" alt="Laboratory" onclick="openLightbox(this.src)" width="400px">
+        </div>
+
+        <div class="gallery-item">
+            <img src="/IMG/Science.jpeg" alt="Library" onclick="openLightbox(this.src)">
+        </div>
+
+        <div class="gallery-item">
+            <img src="/IMG/Sport.jpg" alt="Sports" onclick="openLightbox(this.src)">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/assembly.jpg" alt="Assembly" onclick="openLightbox(this.src)">
+        </div>
+
+        <div class="gallery-item">
+            <img src="/IMG/fa pics.jpg" alt="Students" onclick="openLightbox(this.src)">
+
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox" onclick="closeLightbox()">
+ 
+
+</div>
+
+ 
+
+   
+<script>
+function openLightbox(src) {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("lightbox-img").src = src;
+}
+function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+       <footer class="site-footer">
+    <div class="container footer-grid">
+
+        <div class="footer-box">
+            <h3>Faith Academy</h3>
+            <p>
+                Faith Academy is a secondary school committed to academic excellence,
+                spirituality, and creativity. We provide a nurturing environment that
+                prepares students for a successful future.
+            </p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="Fa.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>Contact Us</h3>
+            <p>
+                📍 KlM 10 Owerri–Onitsha Road,<br>
+                Ogbaku, Imo State
+            </p>
+            <p>📞 +234 000 000 0000</p>
+            <p>✉️ </p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 Faith Academy. All Rights Reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
