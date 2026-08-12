@@ -16,7 +16,7 @@ header {
     padding: 15px 0;
     top: 0;
     position: sticky;
-    z-index: 1000;
+    /* z-index: 1000; */
 }
 
 .container {
@@ -25,21 +25,30 @@ header {
     margin: auto;
 }
 
-header h1 {
-    display: inline-block;
-}
+header {
+     background: #0b3c5d; color: #fff; 
+    padding: 15px 0; 
+    top: 0;
+     position: sticky; 
+    z-index: 1000; 
+} 
 
-nav {
+header h1 { 
+display: inline-block; 
+} 
+nav{
+    margin: auto;
     float: right;
-}
 
+    }
 nav a {
     position: relative;
     color: #fff;
     margin-left: 20px;
     text-decoration: none;
     font-weight: bold;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
+    padding: 10px;
 }
 
 nav a::after {
@@ -115,10 +124,6 @@ nav a.active::after {
     max-width: 30%;
     height: auto;
 }
-
-
-
-
 
 footer {
     background: #0b3c5d;
